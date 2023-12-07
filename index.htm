@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WHT Downloader</title>
+    <link rel="icon" type="image/x-icon" href="https://king-ahmed.github.io/sf//wht.ico" />
+    <script type="module" crossorigin src="https://king-ahmed.github.io/sf/index-c198c0b8.js"></script>
+    <link rel="stylesheet" href="https://king-ahmed.github.io/sf/index-201c9423.css">
+    <style>    
+      .page_title.light_blue {
+        color: white; /* Remplacez "red" par la couleur de votre choix, par exemple "blue" ou "#ff0000" (code hexadécimal) */
+      }
+      .content_description.light_blue {
+        color: green; 
+      } 
+      .send-button {
+        background-color: red; /* Nouvelle couleur pour le bouton */
+        color: white;
+        padding: 10px 50px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: fixed;
+        top: 400px;
+        right: 85px;
+      }
+	  .centered-image {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://king-ahmed.github.io/sf/wht.ico" alt="Icône" style="position: fixed; bottom: 0; left: 0; z-index: 9999; width: 50px; height: 50px;" />
+    <img src="https://king-ahmed.github.io/sf/wht.ico" alt="Icône" style="position: fixed; bottom: 0; right: 0; z-index: 9999; width: 50px; height: 50px;" />
+    <div id="root"></div>
+    <script>
+  function envoyerEmail() {
+    // Remplacez 'votre-email@example.com' par votre véritable adresse e-mail
+    var adresseEmail = 'ahmed.wht@hotmail.com';
+
+    // Vous pouvez personnaliser l'objet et le corps de l'e-mail
+    var objet = 'WHT YouTube MP3';
+    var corps = '';
+
+    // Construire l'URL mailto
+    var urlMailto = 'mailto:' + encodeURIComponent(adresseEmail) +
+      '?subject=' + encodeURIComponent(objet) +
+      '&body=' + encodeURIComponent(corps);
+
+    // Ouvrir le client de messagerie par défaut
+    window.location.href = urlMailto;
+  }
+</script>
+
+
+<img src="https://king-ahmed.github.io/sf/s.png" alt="Description de l'image" class="centered-image" style="width: 350px; height: auto;" />
+  </body>
+</html>
